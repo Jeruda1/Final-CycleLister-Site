@@ -130,8 +130,13 @@ input[type=text] {
   padding:5px 8px;
   text-align:center;
   height:30px;
+  width:0px;
   font-size:1rem;
   float:right;
+}
+header nav ul li a:hover{
+  color:#1ca4de;
+  border-bottom: solid #fef587 1px;
 }
 #slideshow{
   background-image: url(../images/bikemood2.jpg);
@@ -203,6 +208,10 @@ input[type=text] {
   filter: alpha(opacity=60); 
   color:#272822;
 }
+.btn:hover{
+  color:#ffffff;
+  background: #1ca4de;
+}
 .bttm-info{
   margin: 0 0 0 13%;
 }
@@ -272,6 +281,10 @@ hr{
   color:#fef587;
   margin-bottom:15px;
 }
+#button:hover{
+  color:#0e526f;
+  background: #ffffff;
+}
 #your-email{
   font-weight: 600;
   padding: 8px 0;
@@ -297,16 +310,26 @@ input[type=email]{
   border-radius:10px;
   display: inline-block;
   margin-bottom:15px;
+  border: 2px #fa8524;
 }
 input[type=submit]{
   padding: 8px 0 8px 0;
   width: 100px;
-  background:#fef587;
-  font-size: 16px;
-  color:#606161;
+  font-size: 1rem;
   display: inline-block;
    margin-bottom:15px;
    border-radius:10px;
+   background-color: #fef587;
+   border: 2px #fa8524;
+  opacity: 0.8;
+  filter: alpha(opacity=60); 
+  color:#1ca4de;
+}
+input[type=submit]:hover{
+  border-radius: 15px;
+  border: 1px solid white;
+  color:#fef587;
+  background-color:#1ca4de;
 }
 #testimonial{
   background-color:#fef587;
