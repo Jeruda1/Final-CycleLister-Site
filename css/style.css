@@ -1,8 +1,8 @@
 /*
-Project Name: Blank Template
-Client: Your Client
-Author: Your Name
-Developer @GA in NYC
+Project Name: Final Project
+Client: Cyclists of LA
+Author: Jerusha Barnes
+Developer @GA in LA
 */
 
 
@@ -82,12 +82,15 @@ header {
   padding: 10px 0;
   width:100%;
   height:70px;
-  /*position:fixed;
-  z-index:1;*/
+  
   /*when window page y-offset reaches certain height in the browser jquery triggers header to prevent from scrolling at fixed position*/
   /*box-shadow: inset 3px 2px -3px rgba(0,0,0,1);*/
 }
-
+.navfixed{
+  position:fixed;
+  top:0;
+  z-index:1;
+}
 header nav {
   margin: 0 auto;
   display:block;
@@ -130,9 +133,12 @@ input[type=text] {
   padding:5px 8px;
   text-align:center;
   height:30px;
-  width:0px;
+  /*width:0px;*/
   font-size:1rem;
   float:right;
+}
+#search-input input[type=text]{
+  display:none;
 }
 header nav ul li a:hover{
   color:#1ca4de;
@@ -203,7 +209,7 @@ header nav ul li a:hover{
   left:50%;
   transform:translate(-50%, -50%);
   background-color: #fef587;
-  border: 2px #fa8524;
+  /*border: 2px #fa8524;*/
   opacity: 0.8;
   filter: alpha(opacity=60); 
   color:#272822;
@@ -331,10 +337,23 @@ input[type=submit]:hover{
   color:#fef587;
   background-color:#1ca4de;
 }
-#testimonial{
+/*#testimonial{
   background-color:#fef587;
   height:90px;
   margin-bottom:10px;
+}*/
+#testimonial{
+  background-image: url(../images/testimonialpic.png);
+  background-size:cover;
+  background-position:center;
+  height:92px;
+  margin:0 auto;
+  margin-bottom:10px;
+  transition:all 2.5s;
+  overflow:hidden;
+}
+#testimonial.open{
+  height:380px;
 }
 a#testimonials {
   margin-left:580px;
@@ -344,6 +363,42 @@ a#testimonials {
 }
 #testimonial i{
   margin-left:700px;
+  color: #606161;
+}
+
+#quote-boxes{
+  margin-left:340px;
+}
+.testimonial-quote{
+  display:inline-block;
+  background-color: black;
+  width:225px;
+  height:225px;
+  border-radius:10px;
+  padding-top:20px;
+  overflow:hidden;
+  margin: 15px 0 0 20px;
+  opacity: 0.6;
+  filter: alpha(opacity=60); 
+  color:#ffffff;
+  float:left;
+  /*margin-left:30px;*/
+  /*margin-top:30px;*/
+}
+blockquote{
+  font-size:16px;
+  width:190px;
+  text-align:center;
+  margin:0 auto;
+  font-style:italic;
+  margin-bottom:10px;
+}
+.testimonial-quote p{
+  font-size:16px;
+  font-weight:bold;
+  text-align:center;
+  width:150px;
+  margin:0 auto;
 }
 /*#testimonial{
  when window page y-offset reaches certain height in the browser jquery triggers #testimonial to appear or slide down
@@ -375,7 +430,7 @@ footer ul{
 }
 .footer-info{
   text-align:center;
-  color:#fef587;
+  color:#ffffff;
 }
 .footer-info h3{
   font-size:20px;

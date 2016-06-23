@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
 		<script src="https://use.fontawesome.com/548438650d.js"></script>
-
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	</head>
 	<body>
 	<div id="logo-banner">
@@ -27,14 +27,14 @@
 					</ul>	
 					<div id="search">
 						<a href="#"><img src="images/magnify.png" alt="Magnify Glass"></a>
-						<form>
+						<form id="search-input">
 						<input placeholder="search site" type="text">
 						</form>
 					</div>
 				</nav>
 		</header>
 		<section id="slideshow">
-			<h1>Find Companionship in Cylcing</h1>
+			<h1>Find Companionship in Cycling</h1>
 			<hr>
 			<p>discover the community that bridges a gap between your bike & the outside world
 		</section>
@@ -71,9 +71,9 @@
 					<hr>
 					<p>Love CycleLister? Let Us Stalk You. Rest assured it will never be junk mail.</p>
 					<p><a id="your-email" href="#">Sign Up Now!</a></p>
-					<form>
+					<form id="email-input">
 					<input placeholder="your email" type="email" name="email">
-					<input value="Submit" type="submit" >
+					<input id="submit-btn" value="Submit" type="submit" >
 					</form>
 					<img src="images/informedpic.jpg" alt="informed">
 				</div>
@@ -88,7 +88,21 @@
 		</aside>
 		<section id="testimonial">
 			<h1><a id="testimonials" href="#">Testimonials</a></h1>
-			<i class="fa fa-chevron-down" aria-hidden="true"></i>
+			<a href="#"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+			<div id="quote-boxes">
+				<div class="testimonial-quote">
+				<blockquote>"CycleLister changed my social life forever. Goodbye Tinder, hello CycleLister!"</blockquote>
+				<p>-Stuphie Yabish, DTLA</p>
+				</div>
+				<div class="testimonial-quote">
+				<blockquote>"I thought I would pedal alone indefinitely. Thank you Cyclelister for helping to make me feel cool again."</blockquote>
+				<p>-Crass Heckler, Highland Park</p>
+				</div>
+				<div class="testimonial-quote">
+				<blockquote>"What a great resource for finding local group rides and bike shops in my area. Never will I wander the roads aimlessly again!"</blockquote>
+				<p>-Skid Damunk, Pico-Union</p>
+				</div>
+			</div id="quote-boxes">
 		</section>
 		<footer>
 			<div id="logo">
@@ -102,12 +116,13 @@
 			</div>	
 				<div class="social">
 					<ul>
-						<li><a href="#"><img src="images/twitter.png" alt="Twitter logo"></a></li>
-						<li><a href="#"><img src="images/facebook.png" alt="Facebook logo"></a></li>
-						<li><a href="#"><img src="images/instagram.png" alt="Instagram logo"></a></li>
+						<li><a href="https://www.twitter.com"><img src="images/twitter.png" alt="Twitter logo"></a></li>
+						<li><a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook logo"></a></li>
+						<li><a href="https://websta.me"><img src="images/instagram.png" alt="Instagram logo"></a></li>
 					</ul>
 				</div>
 					<p class="copyright">&copy;Copyright 2016. CycleLister.</p>
 		</footer>
+	<script src="js/script.js"></script>
 	</body>
 </html>
